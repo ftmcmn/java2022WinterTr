@@ -1,9 +1,15 @@
 package day34_accessModifier_encapsulation;
 
 public class C03 {
+    // encapsule edecegimiz 2 variable olusturalim
 
-    private  int sayi;
+    private int sayi;
     private String str;
+
+    public int getSayi() {
+        return sayi;
+    }
+
 
     public String getStr() {
         return str;
@@ -13,19 +19,10 @@ public class C03 {
         this.str = str;
     }
 
-    public int getSayi() {
-        return sayi;
-    }
-
-    public void setSayi(int sayi) {
-        this.sayi = sayi;
-    }
-
     @Override
     public String toString() {
         return
-                "sayi= " + sayi +
-                ", str= " + str + '\'' +
-                '}';
+                "sayi=" + sayi +
+                ", str=" + str ;
     }
 }

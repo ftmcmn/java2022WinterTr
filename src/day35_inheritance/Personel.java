@@ -5,3 +5,5 @@ public class Personel {
     protected String soyisim;
     protected String adres;
 }
+
+

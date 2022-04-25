@@ -1,32 +1,30 @@
 package day36_inheritance;
 
-public class SurekliIsciler extends Isci {
+public class SurekliIsciler extends Isci{
+
 
 
     public static void main(String[] args) {
-
-
-        SurekliIsciler suric1=new SurekliIsciler();
-        suric1.persNo=5001;
-        suric1.isim="cem";
-        suric1.soyisim="akay";
-        suric1.statu="Isci";
-        suric1.saatUcreti=11;
-        suric1.maas=suric1.maasHesapla();
-        System.out.println(suric1);
-
+        SurekliIsciler surIc1=new SurekliIsciler();
+        surIc1.persNo=5001;
+        surIc1.isim="Cem";
+        surIc1.soyisim="Akay";
+        surIc1.statu="Isci";
+        surIc1.saatUcreti=11;
+        surIc1.maas=surIc1.maasHesapla();
+        System.out.println(surIc1);
     }
-    @Override
     public String toString() {
         return "SurekliIsciler{" +
-                "saatUcreti=" + saatUcreti +
+                "isciStatu='" + isciStatu + '\'' +
+                ", saatUcreti=" + saatUcreti +
                 ", statu='" + statu + '\'' +
                 ", maas=" + maas +
                 ", persNo=" + persNo +
                 ", isim='" + isim + '\'' +
                 ", soyisim='" + soyisim + '\'' +
                 ", adres='" + adres + '\'' +
-                ", telNo='" + telNo + '\'' +
+                ", tel='" + tel + '\'' +
                 '}';
     }
 

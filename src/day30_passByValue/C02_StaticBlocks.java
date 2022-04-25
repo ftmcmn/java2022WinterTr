@@ -4,15 +4,16 @@ public class C02_StaticBlocks {
 
     {
         /*
+        static olmayan bloklar ise obje olusturulurken calisir
+
         static bloklar sadece 1 kere en basta calisir ama
         static olmayan bloklar her obje olusturulurken yeniden calisir
-
-
          */
-        System.out.println("satatik olmayan blok");
+        System.out.println("static olmayan blok calisti");
     }
-    static {
-        System.out.println("statik blok");
+
+    static{
+        System.out.println("static blok calisti");
     }
 
     public static void main(String[] args) {
@@ -20,6 +21,7 @@ public class C02_StaticBlocks {
 
         C02_StaticBlocks obj1=new C02_StaticBlocks();
         C02_StaticBlocks obj2=new C02_StaticBlocks();
+
 
     }
 }

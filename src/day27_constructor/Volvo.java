@@ -10,6 +10,7 @@ public class Volvo {
     String yakit;
     boolean otomatikPilot=otomatikPilotSorgusu();
     int maxHiz=maxHizAta();
+
     public Volvo(String mdl, boolean elk, int yl, String ykt) {
         model=mdl;
         elektrikliMi=elk;
@@ -17,9 +18,13 @@ public class Volvo {
         yakit=ykt;
         maxHiz=maxHizAta();
         otomatikPilot=otomatikPilotSorgusu();
+
     }
     public Volvo(){
+
     }
+
+
     public int maxHizAta() {
         int maxHiz=0;
         System.out.println("soru : " + elektrikliMi);
@@ -30,18 +35,25 @@ public class Volvo {
         }
         return maxHiz;
     }
+
     public boolean otomatikPilotSorgusu() {
         boolean sonuc=false;
+
         if(elektrikliMi){
             sonuc=true;
         }
         return sonuc;
     }
+
     public String toString(){
         String arabaOzellikleri= "Model : " + model +
-                " Yakit : " + yakit +
-                " Max Hiz : " +maxHiz;
+                                 " Yakit : " + yakit +
+                                 " Max Hiz : " +maxHiz;
+
+
+
         return arabaOzellikleri;
     }
+
 
 }

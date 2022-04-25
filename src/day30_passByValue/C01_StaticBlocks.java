@@ -1,23 +1,22 @@
 package day30_passByValue;
 
-import day29_staticKeyword.C01_Static;
-
 public class C01_StaticBlocks {
+    static {
+        System.out.println("static block2 calisti");
+    }
 
-    static {
-        //static blok class ilk calismaya basladıgında devreye girer
-        //ve claasın calismasi icin gerekli on hazırlıklar
-        // icin kaullanilir
-        //yazıldıgı satirin bir onemi yoktur
-        //class icinde istenen yerde yazilabilir
-        //biredn fazla olursa bloklar yukardan asagı calisir
-        System.out.println("static blok calisti");
+    static{
+        /*
+        static block class ilk calismaya basladiginda devreye girer
+        ve class'in calismasi icin gerekli on hazirliklar icin kullanilir
+        yazildigi satirin hic bir onemi yoktur, class icerisinde istenen yerde yazilabilir
+        static block birden fazla olursa, bloklar yukaridan asagi dogru sirayla calisir
+         */
+        System.out.println("static block1 calisti");
     }
-    static {
-        System.out.println("static blok2 calisti");
-    }
+
     C01_StaticBlocks(){
-        System.out.println("constructor calisti");
+        System.out.println("Constructor calisti");
     }
 
     public static void main(String[] args) {

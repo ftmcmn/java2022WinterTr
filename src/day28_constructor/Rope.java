@@ -1,7 +1,6 @@
 package day28_constructor;
 
 public class Rope {
-
     public static void swing(){
         System.out.print("swing");
     }
@@ -12,6 +11,7 @@ public class Rope {
         swing();
         // climb();
     }
+
     public static void main(String[] args) {
         Rope rope = new Rope();
         rope.play();
@@ -19,3 +19,4 @@ public class Rope {
         rope2.play();
     }
 }
+

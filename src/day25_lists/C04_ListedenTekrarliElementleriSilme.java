@@ -5,10 +5,13 @@ import java.util.List;
 
 public class C04_ListedenTekrarliElementleriSilme {
     public static void main(String[] args) {
-        //verilen bir listede tekrar eden sayilari
-        //sadece bir kere yazdiran bir method olusturun
 
-        List<Integer> sayilar=new ArrayList<>();
+        // verilen bir listede tekrar eden sayilari sadece 1 kere yazdiran
+        // bir method olusturun
+        // orn : [1, 3, 5, 3, 5, 6, 1, 7]
+        // output [1, 3, 5, 6, 7]
+
+        List<Integer> sayilar = new ArrayList<>();
         sayilar.add(1);
         sayilar.add(3);
         sayilar.add(5);
@@ -18,16 +21,23 @@ public class C04_ListedenTekrarliElementleriSilme {
         sayilar.add(1);
         sayilar.add(7);
 
-        tekrarsizListeOlustur(sayilar);
+        tekrarsizListeOlustur(sayilar); // [1, 3, 5, 6, 7]
+        System.out.println(sayilar); // [1, 3, 5, 3, 5, 6, 1, 7]
+
     }
 
     public static void tekrarsizListeOlustur(List<Integer> sayilar) {
-        List<Integer> tekrarsizList=new ArrayList<>();
+
+        List<Integer> tekrarsizList = new ArrayList<>();
+
         for (int i = 0; i <sayilar.size() ; i++) {
+
             if (!tekrarsizList.contains(sayilar.get(i))){
                 tekrarsizList.add(sayilar.get(i));
             }
+
         }
+
         System.out.println(tekrarsizList);
     }
 }

@@ -7,12 +7,12 @@ public class C05_IkiTarihArasiniBulma {
     public static void main(String[] args) {
 
         LocalDate bugun= LocalDate.now();
-        LocalDate dogumGunu= LocalDate.of(1988,9,8);
+        LocalDate dogumGunu=LocalDate.of(1972,01,18);
 
-        System.out.println(Period.between(dogumGunu,bugun));
+        System.out.println(Period.between(dogumGunu,bugun)); // P50Y2M13D
 
-        System.out.println(Period.between(dogumGunu,bugun).getYears());
-        // FIXME: 31.03.2022 );
+        System.out.println(Period.between(dogumGunu,bugun).getYears()); // 50
 
+        // FIXME: 3/31/2022
     }
 }

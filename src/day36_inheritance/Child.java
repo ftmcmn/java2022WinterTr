@@ -1,13 +1,15 @@
 package day36_inheritance;
 
-public class Child {
-    Child() {
+public class Child extends Parent{
+
+    Child(){
         super();
         System.out.println("Child Cons. calisti");
     }
 
     // Tum class'larda biz gormesek bile
     // Java'nin olusturdugu default constructor vardir
+
     // Extends keyword kullanan class'lardaki
     // Tum CONSTRUCTOR'larin ilk satirinda
     // biz gormesek bile super()
@@ -17,4 +19,5 @@ public class Child {
 
         Child child = new Child();
     }
+
 }
